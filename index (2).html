@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Kabra | Structural Biology & Protein Biophysics</title>
+<meta name="description" content="Professional website of Ashish Kabra, Senior Scientist working in structural biology, protein biophysics, NMR, and cancer biology.">
+<style>
+:root{
+  --bg:#f7f8fb; --card:#ffffff; --text:#172033; --muted:#647084;
+  --accent:#3157d5; --accent2:#183a9e; --line:#e5e8ef;
+  --dark:#101827;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{max-width:1120px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navbar{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.5px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.navlinks a:hover{color:var(--accent)}
+.hero{padding:105px 0 90px;background:linear-gradient(135deg,#eef2ff 0%,#fff 58%,#eef7ff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:750;letter-spacing:1.5px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin:14px 0 22px}
+.hero p{font-size:20px;color:var(--muted);max-width:720px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:9px;font-weight:700;font-size:14px;border:1px solid var(--line);background:#fff}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.profile-card{background:var(--dark);color:#fff;padding:34px;border-radius:22px;box-shadow:0 20px 55px rgba(22,38,75,.18)}
+.profile-card .initials{width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--accent);font-size:28px;font-weight:800;margin-bottom:24px}
+.profile-card h3{margin:0 0 6px;font-size:23px}
+.profile-card p{margin:0;color:#cbd3e2;font-size:15px}
+section{padding:88px 0}
+.section-head{margin-bottom:38px}
+.section-head h2{font-size:38px;letter-spacing:-1.4px;margin:0 0 8px}
+.section-head p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.about p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{margin-top:0;font-size:19px}
+.card p{color:var(--muted);font-size:15px}
+.tag{display:inline-block;background:#edf1ff;color:var(--accent2);padding:5px 9px;border-radius:999px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+.research{background:#fff}
+.project{border-top:1px solid var(--line);padding:26px 0;display:grid;grid-template-columns:190px 1fr;gap:30px}
+.project:first-child{border-top:0}
+.project h3{margin:0 0 6px}
+.project .area{color:var(--accent);font-weight:750;font-size:13px;text-transform:uppercase;letter-spacing:.7px}
+.project p{margin:0;color:var(--muted)}
+.publications{display:grid;gap:16px}
+.pub{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.pub strong{display:block;margin-bottom:5px}
+.pub span{color:var(--muted);font-size:14px}
+.contact{background:var(--dark);color:#fff}
+.contact p{color:#cbd3e2}
+.contact-box{display:flex;justify-content:space-between;gap:40px;align-items:center}
+footer{background:var(--dark);color:#8f9aae;border-top:1px solid #293247;padding:24px 0;font-size:13px}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{padding:75px 0}.hero-grid,.about{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr}.project{grid-template-columns:1fr;gap:8px}
+ .contact-box{display:block}h1{letter-spacing:-2px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container navbar">
+    <a class="logo" href="#home">Ashish <span>Kabra</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Structural Biology • Protein Biophysics • Cancer Biology</div>
+      <h1>Understanding how proteins move, bind, and regulate biology.</h1>
+      <p>
+        I am a Senior Scientist at the University of Virginia working at the interface of
+        structural biology, NMR spectroscopy, protein biophysics, and cancer research.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#research">Explore my research</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="initials">AK</div>
+      <h3>Ashish Kabra</h3>
+      <p>Senior Scientist<br>University of Virginia School of Medicine</p>
+      <p style="margin-top:18px">Structural biology · NMR · Protein interactions · Drug discovery</p>
+    </aside>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About me</h2>
+      <p>Research-driven structural biology with an emphasis on mechanism and molecular recognition.</p>
+    </div>
+    <div class="about">
+      <div>
+        <p>
+          My research focuses on understanding the molecular mechanisms that control transcription
+          factors and their interactions with proteins, DNA, RNA, and small molecules. I use
+          complementary biophysical and structural approaches to connect molecular interactions
+          with biological function.
+        </p>
+        <p>
+          My work spans cancer-relevant targets and therapeutic discovery, with particular emphasis
+          on protein dynamics, ligand binding, structure–activity relationships, and mechanistic
+          characterization.
+        </p>
+      </div>
+      <div>
+        <p><strong>Current position</strong><br>Senior Scientist, University of Virginia School of Medicine</p>
+        <p><strong>Primary approach</strong><br>NMR spectroscopy and integrative structural biology</p>
+        <p><strong>Training</strong><br>Ph.D., CSIR-Central Drug Research Institute, Lucknow, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="container">
+    <div class="section-head">
+      <h2>Research expertise</h2>
+      <p>Experimental and computational tools used to answer molecular questions.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>NMR Spectroscopy</h3>
+        <p>Protein assignment, HSQC analysis, chemical-shift perturbation, binding studies, and protein dynamics.</p>
+        <span class="tag">800 MHz NMR</span><span class="tag">R1/R2</span><span class="tag">HSQC</span>
+      </div>
+      <div class="card">
+        <h3>Structural Biology</h3>
+        <p>Integrating NMR, cryo-EM, X-ray crystallography, fluorescence, and biochemical measurements.</p>
+        <span class="tag">Cryo-EM</span><span class="tag">X-ray</span><span class="tag">Biophysics</span>
+      </div>
+      <div class="card">
+        <h3>Drug Discovery</h3>
+        <p>Characterizing small-molecule interactions, SAR, covalent binding, and mechanisms of protein regulation.</p>
+        <span class="tag">SAR</span><span class="tag">FP assays</span><span class="tag">DEL screening</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="research">
+  <div class="container">
+    <div class="section-head">
+      <h2>Selected research</h2>
+      <p>Examples of cancer-focused projects and molecular systems.</p>
+    </div>
+
+    <div class="project">
+      <div class="area">Transcription factors</div>
+      <div>
+        <h3>ETV6 and protein dynamics</h3>
+        <p>Investigating molecular interactions and conformational dynamics of ETV6 using NMR spectroscopy and complementary biochemical approaches.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="area">Leukemia</div>
+      <div>
+        <h3>MLLT3 / AF9 YEATS domain</h3>
+        <p>Characterizing recognition of RNA and molecular partners by the YEATS domain, combining structural and biophysical measurements.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="area">Cancer signaling</div>
+      <div>
+        <h3>EP300-KIX and transcriptional regulation</h3>
+        <p>Studying ligand and peptide interactions with the KIX domain and developing mechanistic insight into transcriptional regulation.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="area">Sarcoma</div>
+      <div>
+        <h3>EWS-FLI1 and ERG-related targets</h3>
+        <p>Using structural biology and ligand discovery to investigate transcription-factor regulation and identify potential inhibitors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <div class="section-head">
+      <h2>Publications & impact</h2>
+      <p>Selected areas of published and ongoing work.</p>
+    </div>
+    <div class="publications">
+      <div class="pub">
+        <strong>MLLT3 / YEATS domain research</strong>
+        <span>Structural and biophysical characterization of YEATS-domain interactions with RNA and molecular partners.</span>
+      </div>
+      <div class="pub">
+        <strong>EP300-KIX transcriptional regulation</strong>
+        <span>Mechanistic studies of KIX-domain regulation and small-molecule/peptidomimetic inhibition.</span>
+      </div>
+      <div class="pub">
+        <strong>Transcription-factor inhibitor discovery</strong>
+        <span>Integrative structural biology approaches toward understanding and targeting cancer-associated transcription factors.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-box">
+    <div>
+      <div class="eyebrow" style="color:#9fb4ff">Contact</div>
+      <h2 style="font-size:38px;margin:8px 0">Let's connect.</h2>
+      <p>For collaborations, research discussions, or scientific opportunities, please get in touch.</p>
+    </div>
+    <div>
+      <a class="btn primary" href="mailto:YOUR_EMAIL@virginia.edu">Email me</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Ashish Kabra · University of Virginia · Personal academic website</div>
+</footer>
+
+</body>
+</html>
